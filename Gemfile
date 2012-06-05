@@ -1,5 +1,6 @@
 source :rubygems
 
+gem "punchblock", :git => "git://github.com/adhearsion/punchblock.git", :branch => "feature/fibers_fix"
 gem "adhearsion", ">=2.0.0"
 
 #
