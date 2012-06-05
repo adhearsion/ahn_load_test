@@ -3,8 +3,8 @@
 class SimpleProfile < Adhearsion::CallController
   def run
     answer
-    sleep rand(30..58)
-    logger.info "Hanging up"
+    play "tt-monkeys"
+    execute "WaitExten", 120
     hangup
   end
 end

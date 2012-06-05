@@ -2,6 +2,7 @@ source :rubygems
 
 gem "punchblock", :git => "git://github.com/adhearsion/punchblock.git", :branch => "feature/fibers_fix"
 gem "adhearsion", ">=2.0.0"
+gem "adhearsion-asterisk"
 
 #
 # Here are some example plugins you might like to use. Simply

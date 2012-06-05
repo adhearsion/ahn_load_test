@@ -38,6 +38,9 @@ GEM
       ruby_speech (~> 1.0)
       thor
       uuid
+    adhearsion-asterisk (1.2.0)
+      activesupport (>= 3.0.10)
+      adhearsion (~> 2.0)
     adhearsion-loquacious (1.9.3)
     blather (0.7.1)
       activesupport (>= 3.0.7)
@@ -97,4 +100,5 @@ PLATFORMS
 
 DEPENDENCIES
   adhearsion (>= 2.0.0)
+  adhearsion-asterisk
   punchblock!
