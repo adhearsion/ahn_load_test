@@ -1,9 +1,11 @@
 # encoding: utf-8
 
-class SimpleProfile < Adhearsion::CallController
+class DialProfile < Adhearsion::CallController
   def run
     answer
-    dial("SIP/100@whatever.com")
+    dial_target = ENV['DIAL_TARGET'] || Adhearsion.config.platform.dial_target
+    logger.info "Dialing #{dial_target}"
+    dial dial_target
     hangup
   end
 end

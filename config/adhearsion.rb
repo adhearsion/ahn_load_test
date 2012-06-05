@@ -18,7 +18,7 @@ Adhearsion.config do |config|
   #        end
 
   config.development do |dev|
-    dev.platform.logging.level = :debug
+    dev.platform.logging.level = :trace
   end
 
   ##
@@ -35,6 +35,9 @@ Adhearsion.config do |config|
   config.punchblock.password = "ahn123" # Your AMI password
   config.punchblock.host = "127.0.0.1" # Your AMI host
   config.punchblock.port = 5038 # Your AMI port
+
+  config.platform.dial_target = "SIP/1@tincan.mojolingo.com"
+  #config.platform.dial_target = "Local/77@default"
 end
 
 Adhearsion::Events.draw do
@@ -62,4 +65,5 @@ Adhearsion.router do
   route 'SimpleProfile', SimpleProfile, :to => '1'
   route 'EarlyProfile', EarlyProfile, :to => '2'
   route 'InputProfile', InputProfile, :to => '3'
+  route 'DialProfile', DialProfile, :to => '4'
 end

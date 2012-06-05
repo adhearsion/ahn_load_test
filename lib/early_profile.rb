@@ -2,9 +2,9 @@
 
 class EarlyProfile < Adhearsion::CallController
   def run
-    play "tt-weasels"
+    play "#{Adhearsion.config[:platform].root}/sounds/80sec-monkeys"
     answer
-    play "tt-monkeys"
+    play "tt-weasels"
     hangup
   end
 end
