@@ -53,7 +53,7 @@ GEM
     connection_pool (0.1.0)
     countdownlatch (1.0.0)
     deep_merge (1.0.0)
-    eventmachine (0.12.10)
+    eventmachine (1.0.0.beta.4)
     ffi (1.0.11)
     future-resource (1.0.0)
     girl_friday (0.9.7)
@@ -101,4 +101,5 @@ PLATFORMS
 DEPENDENCIES
   adhearsion (>= 2.0.0)
   adhearsion-asterisk
+  eventmachine (= 1.0.0.beta.4)
   punchblock!
