@@ -2,6 +2,6 @@
 .*.swp
 .*.swo
 .DS_STORE
-log/*.log
 tmp
 vendor/ruby
+**/*.log
