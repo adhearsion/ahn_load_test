@@ -1,7 +1,7 @@
 source :rubygems
 
 gem "eventmachine", "1.0.0.beta.4"
-gem "punchblock", :git => "git://github.com/adhearsion/punchblock.git", :branch => "feature/fibers_fix"
+gem "punchblock", :git => "git://github.com/adhearsion/punchblock.git", :branch => :develop
 gem "adhearsion", ">=2.0.0"
 gem "adhearsion-asterisk"
 
