@@ -2,7 +2,7 @@ source :rubygems
 
 gem "eventmachine", "1.0.0.beta.4"
 gem "punchblock", :git => "git://github.com/adhearsion/punchblock.git", :branch => :develop
-gem "adhearsion", ">=2.0.0"
+gem "adhearsion", :git => "git://github.com/adhearsion/adhearsion.git", :branch => :develop
 gem "adhearsion-asterisk"
 gem 'niceogiri', :git => 'git://github.com/benlangfeld/niceogiri.git'
 gem 'nokogiri', '>=1.5.6.rc1'

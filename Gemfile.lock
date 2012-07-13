@@ -1,4 +1,28 @@
 GIT
+  remote: git://github.com/adhearsion/adhearsion.git
+  revision: 9a0fc38195aac8ee8bbfd6d1c0283981e44cbe63
+  branch: develop
+  specs:
+    adhearsion (2.0.1)
+      activesupport (>= 3.0.10)
+      adhearsion-loquacious (>= 1.9.0)
+      bundler (~> 1.0)
+      celluloid (>= 0.10.0)
+      countdownlatch
+      deep_merge
+      ffi (>= 1.0.11)
+      future-resource (~> 1.0)
+      girl_friday
+      has-guarded-handlers (~> 1.1)
+      logging (>= 1.6.1)
+      pry
+      punchblock (~> 1.2)
+      rake
+      ruby_speech (~> 1.0)
+      thor
+      uuid
+
+GIT
   remote: git://github.com/adhearsion/punchblock.git
   revision: 5f474c68c9aef199c6ebc57cea3d0281ea0f1525
   branch: develop
@@ -27,24 +51,6 @@ GEM
     activesupport (3.2.6)
       i18n (~> 0.6)
       multi_json (~> 1.0)
-    adhearsion (2.0.1)
-      activesupport (>= 3.0.10)
-      adhearsion-loquacious (>= 1.9.0)
-      bundler (~> 1.0)
-      celluloid (>= 0.10.0)
-      countdownlatch
-      deep_merge
-      ffi (>= 1.0.11)
-      future-resource (~> 1.0)
-      girl_friday
-      has-guarded-handlers (~> 1.1)
-      logging (>= 1.6.1)
-      pry
-      punchblock (~> 1.0)
-      rake
-      ruby_speech (~> 1.0)
-      thor
-      uuid
     adhearsion-asterisk (1.2.1)
       activesupport (>= 3.0.10)
       adhearsion (~> 2.0)
@@ -117,7 +123,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  adhearsion (>= 2.0.0)
+  adhearsion!
   adhearsion-asterisk
   eventmachine (= 1.0.0.beta.4)
   niceogiri!
