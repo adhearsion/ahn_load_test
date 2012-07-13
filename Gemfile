@@ -6,6 +6,7 @@ gem "adhearsion", :git => "git://github.com/adhearsion/adhearsion.git", :branch 
 gem "adhearsion-asterisk"
 gem 'niceogiri', :git => 'git://github.com/benlangfeld/niceogiri.git'
 gem 'nokogiri', '>=1.5.6.rc1'
+gem 'has-guarded-handlers', :git => 'git://github.com/adhearsion/has-guarded-handlers.git', :branch => :develop
 
 #
 # Here are some example plugins you might like to use. Simply

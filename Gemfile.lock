@@ -23,6 +23,13 @@ GIT
       uuid
 
 GIT
+  remote: git://github.com/adhearsion/has-guarded-handlers.git
+  revision: 8d4d479b8e306ee23828bc1aefa1c09a4028c87e
+  branch: develop
+  specs:
+    has-guarded-handlers (1.3.0)
+
+GIT
   remote: git://github.com/adhearsion/punchblock.git
   revision: 5f474c68c9aef199c6ebc57cea3d0281ea0f1525
   branch: develop
@@ -76,8 +83,6 @@ GEM
     future-resource (1.0.0)
     girl_friday (0.9.7)
       connection_pool (~> 0.1.0)
-    has-guarded-handlers (1.3.0)
-      uuid
     i18n (0.6.0)
     little-plugger (1.1.3)
     logging (1.7.2)
@@ -126,6 +131,7 @@ DEPENDENCIES
   adhearsion!
   adhearsion-asterisk
   eventmachine (= 1.0.0.beta.4)
+  has-guarded-handlers!
   niceogiri!
   nokogiri (>= 1.5.6.rc1)
   punchblock!
