@@ -1,32 +1,28 @@
-# Adhearsion Load Testing with SIPP
+# Adhearsion Load Testing
 
-This application's purpose is to provide a ready-built load testing environment to use with SIPp.
+This application's purpose is to establish the performance of Adhearsion applications accross supported platforms.
 
-## SIPp
+## Load Generation
 
-SIPp, available at [http://sipp.sourceforge.net/](http://sipp.sourceforge.net/), is a command-line tool for testing and traffic generation for the SIP protocol.
+[SIPp](http://sipp.sourceforge.net/) is a command-line tool for testing and traffic generation for the SIP protocol. [SippyCup](http://mojolingo.github.io/sippy_cup) is a Ruby wrapper for SIPp integrating simpler scenario preparation and reporting functionality.
 
-It offers many useful features that allow for various scenarios to be tested.
-In this specific application, we will be using SIPp as a client to simulate many calls over a period of time, with limited interaction with the Adhearsion app.
+Load generation scenarios included in this project utilise SippyCup for their execution. SippyCup and SIPp come pre-installed on the Loadtest VM from [Telephony Dev Box](http://mojolingo.github.io/Telephony-Dev-Box).
 
-### Obtaining and compiling SIPp
+## System under test
 
-Comprehensive installation instructions are available [here](http://sipp.sourceforge.net/doc/reference.html#Installation).
-The load tests have been developed using the unstable/SVN branch, which is thus recommended.
-Prerequisites are mostly standard and included in most Linux/OSX installations.
+Use the Asterisk and FreeSWITCH VMs from [Telephony Dev Box](http://mojolingo.github.io/Telephony-Dev-Box). Boot the Adhearsion application as follows:
 
-PCAP Play capabilities are needed for this app, so the command used for compiling SIPp will be "make pcapplay". That is the only step needed, there is no ./configure script.
-Authentication is not currently used or needed by the app.
-There is no "make install" step available, you can link the bin/sipp executable to any PATH directory.
+```
+AHN_PUNCHBLOCK_PLATFORM=asterisk AHN_PUNCHBLOCK_USERNAME=manager AHN_PUNCHBLOCK_PASSWORD=password AHN_PUNCHBLOCK_HOST=asterisk.local-dev.mojolingo.com ahn start .
 
-## Asterisk configuration
+# or
 
-It is recommended to use a very minimal Asterisk configuration, such as the one bundled.
-The application is set up to use 1, 2,3 and 4 as the routes to the controllers.
-
-Depending on your setup, you might either need allowguest=yes in your sip.conf general settings ot setting up a password-less peer.
+AHN_PUNCHBLOCK_PLATFORM=xmpp AHN_PUNCHBLOCK_USERNAME=usera@freeswitch.local-dev.mojolingo.com AHN_PUNCHBLOCK_PASSWORD=1 ahn start .
+```
 
 ## Running the tests
+
+STALE. Rewrite for SippyCup.
 
 SIPp uses scenario files that reside in the sipp/ directory, together with the needed sound files.
 Since the paths to the sound captures are relative in the scenarios, you should only run the commands from inside the sipp/ directory.
